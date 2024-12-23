@@ -2,6 +2,9 @@ version: '3'
 
 services:
   payload:
+    build:
+        context: .
+        dockerfile: ./Dockerfile
     image: node:18-alpine
     ports:
       - '4031:3000'
